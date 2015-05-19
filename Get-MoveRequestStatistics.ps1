@@ -1,0 +1,1 @@
+﻿while (1 -eq 1) { Get-MoveRequest | Get-MoveRequestStatistics | Where {$_.Status -ne "Completed"} ; Start-Sleep -Seconds 2; Clear-Host; }

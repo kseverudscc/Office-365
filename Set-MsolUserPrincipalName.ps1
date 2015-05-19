@@ -1,0 +1,1 @@
+﻿Set-MsolUserPrincipalName -UserPrincipalName ayamamoto@shoreline.edu -NewUserPrincipalName AKellam@shoreline.edu

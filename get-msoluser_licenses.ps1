@@ -1,0 +1,1 @@
+﻿get-msoluser -all | ForEach-Object { "============="; $_.DisplayName; $_.licenses[0].servicestatus } > c:\temp\MSOL_services.csv
