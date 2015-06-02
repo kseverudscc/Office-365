@@ -24,7 +24,7 @@
                        'BIOS Revision'=$bios.SMBIOSBIOSVersion
                        'Manufacturer'=$comp.manufacturer;
                        'Model'=$comp.model}
-            $obj = New-Object -TypeName PSObject -Property $props
+            $obj = New-Object -TypeName PSObject -Property $props | Select 'Host Name',manufacturer,model,serial,'BIOS Revision','OS','OS Version'
             Write-Output $obj
         }
     }
